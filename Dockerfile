@@ -13,7 +13,7 @@ RUN cd /zkbnb && make build-only
 FROM alpine:3.16.0
 
 ARG USER=bsc
-ARG USER_UID=1000
+ARG USER_UID=1000NV GO111MODULE=on
 ARG USER_GID=1000
 
 ENV PACKAGES ca-certificates~=20220614 bash~=5.1.16-r2
